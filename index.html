@@ -15,20 +15,20 @@
 <nav class="navbar navbar-default navbar-static-top">
       <div class="container">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="dropdown">
-
+            <li><a ui-sref="parent">Parent</a></li>
+            <li><a ui-sref="parent.child">Child</a></li>
+            <li><a ui-sref="parent.child.grandchild">Grandchild</a></li>
           </ul>
 
       </div>
     </nav>
 
   <h1>Multi-View Target Practice | <span ui-view="main-header"></span></h1>
+
   <h2>Parent</h2>
 
   <div ui-view></div>
   <div ui-view="named-parent"></div>
+
 </body>
 </html>
