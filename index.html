@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="TargetPractice">
 <head>
   <title>Muli View Targets Practice</title>
 
@@ -10,7 +10,7 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
-<body>
+<body class="text-center">
 
 <nav class="navbar navbar-default navbar-static-top">
       <div class="container">
@@ -25,5 +25,10 @@
       </div>
     </nav>
 
+  <h1>Multi-View Target Practice | <span ui-view="main-header"></span></h1>
+  <h2>Parent</h2>
+
+  <div ui-view></div>
+  <div ui-view="named-parent"></div>
 </body>
 </html>
